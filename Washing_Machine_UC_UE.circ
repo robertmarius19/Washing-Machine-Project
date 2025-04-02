@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="NEXYS4_total"/>
+    <a name="simulationFrequency" val="4.0"/>
+    <boardmap boardname="BASYS3">
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc/>
+      <mc key="/Confirm" map="192,323"/>
+      <mc key="/Door" map="154,323"/>
+      <mc key="/Reset" map="117,323"/>
+      <mc key="/Selector_MUX" map="228,323"/>
+      <mc key="/Start" map="78,323"/>
+    </boardmap>
+    <boardmap boardname="NEXYS4_total">
+      <mc/>
+      <mc key="/Address_Clatire" map="575,365"/>
+      <mc key="/Address_Mod_Auto" pmap="351_366_0,319_365_0,275_365_0"/>
+      <mc key="/Address_Prespalare" map="541,367"/>
+      <mc key="/Address_Temperatura" pmap="423_364_0,390_365_0"/>
+      <mc key="/Address_Viteza" pmap="498_363_0,463_363_0"/>
+      <mc key="/Chatodes" pmap="160_293_0,181_294_0,181_314_0,162_329_0,151_313_0,151_295_0,162_313_0"/>
+      <mc key="/Clock" map="303,187"/>
+      <mc key="/Confirm" map="202,366"/>
+      <mc key="/Door" map="164,365"/>
+      <mc key="/Led_Door" map="137,337"/>
+      <mc key="/Led_On_Off" map="101,337"/>
+      <mc key="/Reset" map="126,367"/>
+      <mc key="/Selector_MUX" map="238,367"/>
+      <mc key="/Start" map="90,366"/>
+    </boardmap>
+    <comp lib="0" loc="(1250,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Address_Mod_Auto"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(1250,350)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Address_Clatire"/>
+    </comp>
+    <comp lib="0" loc="(1250,370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Address_Prespalare"/>
+    </comp>
+    <comp lib="0" loc="(1250,390)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Address_Temperatura"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1250,410)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Address_Viteza"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1250,430)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Selector_MUX"/>
+    </comp>
+    <comp lib="0" loc="(1470,370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Anodes"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(1470,390)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Chatodes"/>
+      <a name="output" val="true"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="0" loc="(240,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(630,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(680,460)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Start"/>
+    </comp>
+    <comp lib="0" loc="(680,480)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Confirm"/>
+    </comp>
+    <comp lib="0" loc="(680,500)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Door"/>
+    </comp>
+    <comp lib="0" loc="(900,420)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Led_On_Off"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(900,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Led_Door"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp loc="(1470,330)" name="UE">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ue_1"/>
+    </comp>
+    <comp loc="(540,300)" name="Frequency_divider">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="frequency_divider_1"/>
+    </comp>
+    <comp loc="(900,420)" name="UC">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="uc_1"/>
+    </comp>
+    <wire from="(1010,450)" to="(1010,520)"/>
+    <wire from="(1010,450)" to="(1250,450)"/>
+    <wire from="(1010,540)" to="(1010,570)"/>
+    <wire from="(1010,570)" to="(1250,570)"/>
+    <wire from="(1030,500)" to="(1030,550)"/>
+    <wire from="(1030,550)" to="(1250,550)"/>
+    <wire from="(1050,480)" to="(1050,530)"/>
+    <wire from="(1050,530)" to="(1250,530)"/>
+    <wire from="(1070,460)" to="(1070,510)"/>
+    <wire from="(1070,510)" to="(1250,510)"/>
+    <wire from="(1090,390)" to="(1090,490)"/>
+    <wire from="(1090,490)" to="(1250,490)"/>
+    <wire from="(1110,270)" to="(1110,470)"/>
+    <wire from="(1110,470)" to="(1250,470)"/>
+    <wire from="(1470,330)" to="(1670,330)"/>
+    <wire from="(1470,350)" to="(1650,350)"/>
+    <wire from="(1650,350)" to="(1650,800)"/>
+    <wire from="(1670,330)" to="(1670,820)"/>
+    <wire from="(240,300)" to="(280,300)"/>
+    <wire from="(280,270)" to="(1110,270)"/>
+    <wire from="(280,270)" to="(280,300)"/>
+    <wire from="(280,300)" to="(320,300)"/>
+    <wire from="(540,300)" to="(640,300)"/>
+    <wire from="(630,440)" to="(660,440)"/>
+    <wire from="(640,300)" to="(640,420)"/>
+    <wire from="(640,420)" to="(680,420)"/>
+    <wire from="(640,520)" to="(640,820)"/>
+    <wire from="(640,520)" to="(680,520)"/>
+    <wire from="(640,820)" to="(1670,820)"/>
+    <wire from="(660,390)" to="(1090,390)"/>
+    <wire from="(660,390)" to="(660,440)"/>
+    <wire from="(660,440)" to="(680,440)"/>
+    <wire from="(660,540)" to="(660,800)"/>
+    <wire from="(660,540)" to="(680,540)"/>
+    <wire from="(660,800)" to="(1650,800)"/>
+    <wire from="(900,460)" to="(1070,460)"/>
+    <wire from="(900,480)" to="(1050,480)"/>
+    <wire from="(900,500)" to="(1030,500)"/>
+    <wire from="(900,520)" to="(1010,520)"/>
+    <wire from="(900,540)" to="(1010,540)"/>
+    <wire from="(900,560)" to="(990,560)"/>
+    <wire from="(900,580)" to="(970,580)"/>
+    <wire from="(900,600)" to="(950,600)"/>
+    <wire from="(950,600)" to="(950,630)"/>
+    <wire from="(950,630)" to="(1250,630)"/>
+    <wire from="(970,580)" to="(970,610)"/>
+    <wire from="(970,610)" to="(1250,610)"/>
+    <wire from="(990,560)" to="(990,590)"/>
+    <wire from="(990,590)" to="(1250,590)"/>
+  </circuit>
+  <vhdl name="UC">
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY UC IS
+  PORT (
+  	Clock : IN std_logic;
+  	Reset : IN std_logic;
+  	Start : IN std_logic;
+  	Confirm : IN std_logic;
+  	Door : IN std_logic;
+  	T0_Counter : IN std_logic;
+  	T0_Counter_1_min : IN std_logic;
+  	
+  	Led_On_Off : OUT std_logic;
+  	Led_Door_Locked : OUT std_logic;
+  	Enable_ROM : OUT std_logic;
+  	Enable_Counter : OUT std_logic;
+  	Enable_Counter_1_min : OUT std_logic;
+  	Selector_MUX : OUT std_logic;
+  	Load_Counter : OUT std_logic;
+  	Enable_SSD : OUT std_logic;
+  	End_Message : OUT std_logic;
+  	Reset_Counter_1_min : OUT std_logic
+    );
+END UC;
+
+ARCHITECTURE TypeArchitecture OF UC IS
+
+type State is (Idle, Wait_Confirm, Wait_Counter, Wait_Counter_1_min, End_State);
+signal Current_State, Next_State : State;
+
+BEGIN
+
+	process(Clock, Reset)
+	begin
+
+		if Reset = '1' then
+			Current_State &lt;= Idle;
+		elsif Clock'event and Clock = '1' then
+			Current_State &lt;= Next_State;
+		end if;
+		
+	end process;
+
+	process(Current_State, Clock, Reset, Start, Confirm, Door, T0_Counter, T0_Counter_1_min)
+	begin
+
+		Led_On_Off &lt;= '0';
+		Led_Door_Locked &lt;= '0';
+		Enable_Counter &lt;= '0';
+		Enable_Counter_1_min &lt;= '0';
+		Enable_SSD &lt;= '0';
+		Enable_ROM &lt;= '0';
+		Selector_MUX &lt;= '0';
+		Load_Counter &lt;= '0';
+		End_Message &lt;= '0';
+		Reset_Counter_1_min &lt;= '0';
+
+		case Current_State is
+			when Idle =&gt;
+				if Start = '1' then
+					Next_State &lt;= Wait_Confirm;
+				else
+					Next_State &lt;= Idle;
+				end if;
+			when Wait_Confirm =&gt;
+				Led_On_Off &lt;= '1';
+				Enable_ROM &lt;= '1';
+				Enable_Counter &lt;= '1';
+				Enable_SSD &lt;= '1';
+				Load_Counter &lt;= '1';
+				if Confirm = '1' and Door = '1' then
+					Next_State &lt;= Wait_Counter;
+				else
+					Next_State &lt;= Wait_Confirm;
+				end if;
+			when Wait_Counter =&gt;
+				Led_On_Off &lt;= '1';
+				Enable_ROM &lt;= '1';
+				Enable_Counter &lt;= '1';
+				Enable_SSD &lt;= '1';
+				Led_Door_Locked &lt;= '1';
+				Load_Counter &lt;= '0';
+				if T0_Counter = '1' then 
+					Next_State &lt;= Wait_Counter_1_min;
+				else
+					Next_State &lt;= Wait_Counter;
+				end if;
+			when Wait_Counter_1_min =&gt;
+				Led_On_Off &lt;= '1';
+				Enable_ROM &lt;= '1';
+				Enable_Counter &lt;= '0';
+				Enable_SSD &lt;= '1';
+				Led_Door_Locked &lt;= '1';
+				Load_Counter &lt;= '0';
+				Selector_MUX &lt;= '1';
+				Enable_Counter_1_min &lt;= '1';
+				if T0_Counter_1_min = '1' then 
+					Next_State &lt;= End_State;
+				else
+					Next_State &lt;= Wait_Counter_1_min;
+				end if;
+			when End_State =&gt;
+				Led_On_Off &lt;= '1';
+				Enable_ROM &lt;= '1';
+				Enable_Counter &lt;= '0';
+				Enable_SSD &lt;= '1';
+				Led_Door_Locked &lt;= '0';
+				Load_Counter &lt;= '0';
+				Selector_MUX &lt;= '1';
+				End_Message &lt;= '1';
+				Enable_Counter_1_min &lt;= '0';
+				Reset_Counter_1_min &lt;= '1';
+				if Start = '0' then
+					Next_State &lt;= Idle;
+				else 
+					Next_State &lt;= End_State;
+				end if;
+			when others =&gt;
+				Next_State &lt;= Idle;
+		end case;
+				
+				
+
+	end process;
+
+
+END TypeArchitecture;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</vhdl>
+  <vhdl name="UE">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY UE IS&#13;
+  PORT (&#13;
+  	Address_Mod_Auto : IN std_logic_vector (2 downto 0);
+  	Address_Clatire : IN std_logic;
+  	Address_Prespalare : IN std_logic;
+  	Address_Temperatura : IN std_logic_vector (1 downto 0);
+  	Address_Viteza : IN std_logic_vector (1 downto 0);
+  	Selector_MUX_Mod : IN std_logic;
+  	Selector_MUX_Counters : IN std_logic;
+  	Clock : IN std_logic;
+  	Reset : IN std_logic;
+  	Enable_ROM : IN std_logic;
+  	Enable_Counter : IN std_logic;
+  	Enable_Counter_1_min : IN std_logic;
+  	Load_Counter : IN std_logic;
+  	Enable_SSD : IN std_logic;
+  	End_Message : IN std_logic;
+  	Reset_Counter_1_min : IN std_logic;
+
+  	T0_Counter : OUT std_logic;
+  	T0_Counter_1_min : OUT std_logic;
+  	Anodes : OUT std_logic_vector (3 downto 0);
+  	Chatodes : OUT std_logic_vector (6 downto 0)
+    );&#13;
+END UE;&#13;
+
+ARCHITECTURE TypeArchitecture OF UE IS&#13;
+
+COMPONENT ROM_Viteza IS
+  PORT (
+  	Address : IN std_logic_vector (1 downto 0);
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT ROM_Temperatura IS
+  PORT (
+  	Address : IN std_logic_vector (1 downto 0);
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT ROM_Prespalare IS
+  PORT (
+  	Address : IN std_logic;
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT ROM_Clatire_Suplimentara IS
+  PORT (
+  	Address : IN std_logic;
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT Full_Adder IS
+  PORT (
+  	Op1 : IN std_logic_vector (5 downto 0);
+  	Op2 : IN std_logic_vector (5 downto 0);
+  	Op3 : IN std_logic_vector (5 downto 0);
+  	Op4 : IN std_logic_vector (5 downto 0);
+  	Result : OUT std_logic_vector (5 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT ROM_Mod_Automat IS
+  PORT (
+  	Address : IN std_logic_vector (2 downto 0);
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT MUX_2_to_1 IS
+  PORT (
+  	I0 : IN std_logic_vector (5 downto 0);
+  	Selector : IN std_logic;
+  	I1 : IN std_logic_vector (5 downto 0);
+  	Output : OUT std_logic_vector (5 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT Counter_n_bits IS
+  PORT (
+  	Parallel_Input : IN std_logic_vector (5 downto 0);
+  	Load : IN std_logic;
+  	Enable : IN std_logic; 
+  	Reset : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0);
+  	T0 : OUT std_logic
+    );
+END COMPONENT;
+
+COMPONENT Counter_1_min IS
+  PORT (
+  	Enable : IN std_logic;
+  	Reset : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0);
+  	T0 : OUT std_logic
+    );
+END COMPONENT;
+
+COMPONENT Binary_to_Digits IS
+  PORT (
+    Number : IN std_logic_vector (5 downto 0);
+    End_Program : IN std_logic;
+    Digit0, Digit1, Digit2, Digit3 : OUT std_logic_vector (3 downto 0)
+  );
+END COMPONENT;
+
+COMPONENT Frequency_divider_1_sec IS
+	PORT (
+		clk : IN std_logic;
+  	     clk1 : OUT std_logic
+  	     );
+END COMPONENT;
+
+COMPONENT SSD_Controller IS
+  PORT (
+  	Clock : IN std_logic;
+  	Enable : IN std_logic;
+  	Digit0, Digit1, Digit2, Digit3 : IN std_logic_vector (3 downto 0);
+  	Anodes : OUT std_logic_vector (3 downto 0);
+  	Chatodes : OUT std_logic_vector (6 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT Frequency_divider IS
+  PORT (clock : IN std_logic;
+  	   div_clk : OUT std_logic);
+END COMPONENT;
+
+COMPONENT OR_GATE IS
+  PORT (
+  	I0, I1 : IN std_logic;
+  	Output : OUT std_logic
+    );
+END COMPONENT;
+
+SIGNAL Clock_Divided, Clock_1_min : std_logic;
+SIGNAL Address_S0, Address_S1, Address_S2, Address_S3, Address_S4 : std_logic_vector (5 downto 0);
+SIGNAL Result_Sum_S5 : std_logic_vector (5 downto 0);
+SIGNAL Output_MUX_S6 : std_logic_vector (5 downto 0);
+SIGNAL Data_Counter_S7 : std_logic_vector (5 downto 0);
+SIGNAL Reset_S8 : std_logic;
+SIGNAL Data_Counter_1_min_S9 : std_logic_vector (5 downto 0);
+SIGNAL Output_MUX_Counters_S10 : std_logic_vector (5 downto 0);
+SIGNAL Output_Digit0_S11, Output_Digit1_S12, Output_Digit2_S13, Output_Digit3_S14 : std_logic_vector (3 downto 0);
+
+&#13;
+BEGIN&#13;
+
+	C0 : Frequency_divider port map (Clock, Clock_Divided);
+	C1 : Frequency_divider_1_sec port map (Clock, Clock_1_min);
+	C2 : ROM_Mod_Automat port map (Address_Mod_Auto, Enable_ROM, Clock_Divided, Address_S0);
+	C3 : ROM_Clatire_Suplimentara port map (Address_Clatire, Enable_ROM, Clock_Divided, Address_S1);
+	C4 : ROM_Prespalare port map (Address_Prespalare, Enable_ROM, Clock_Divided, Address_S2);
+	C5 : ROM_Temperatura port map (Address_Temperatura, Enable_ROM, Clock_Divided, Address_S3);
+	C6 : ROM_Viteza port map (Address_Viteza, Enable_ROM, Clock_Divided, Address_S4);
+	C7 : Full_Adder port map (Address_S1, Address_S2, Address_S3, Address_S4, Result_Sum_S5);
+	C8 : MUX_2_to_1 port map (Address_S0, Selector_MUX_Mod, Result_Sum_S5, Output_MUX_S6);
+	C10 : Counter_n_bits port map (Output_MUX_S6, Load_Counter, Enable_Counter, Reset, Clock_1_min, Data_Counter_S7, T0_Counter);
+	C11 : OR_GATE port map (Reset, Reset_Counter_1_min, Reset_S8);
+	C12 : Counter_1_min port map (Enable_Counter_1_min, Reset_S8, Clock_1_min, Data_Counter_1_min_S9, T0_Counter_1_min);
+	C13 : MUX_2_to_1 port map (Data_Counter_S7, Selector_MUX_Counters, Data_Counter_1_min_S9, Output_MUX_Counters_S10);
+	C14 : Binary_to_Digits port map (Output_MUX_Counters_S10, End_Message, Output_Digit0_S11, Output_Digit1_S12, Output_Digit2_S13, Output_Digit3_S14);
+	C15 : SSD_Controller port map (Clock, Enable_SSD, Output_Digit0_S11, Output_Digit1_S12, Output_Digit2_S13, Output_Digit3_S14, Anodes, Chatodes);
+	
+	
+	
+&#13;
+&#13;
+END TypeArchitecture;&#13;
+
+--------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ROM_Viteza IS
+  PORT (
+  	Address : IN std_logic_vector (1 downto 0);
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (
+5 downto 0)
+    );
+END ROM_Viteza;
+
+ARCHITECTURE TypeArchitecture OF ROM_Viteza IS
+
+type Matrix is array (0 to 3) of std_logic_vector (5 downto 0);
+signal Memory : Matrix := ("000101", "001010", "001111", "000000");
+
+BEGIN
+
+	PROCESS(Clock, Enable, Address)
+	BEGIN
+
+	if Clock = '1' and Clock'event and Enable = '1' then
+		Data &lt;= Memory(conv_integer(Address));
+	end if;
+
+	END PROCESS;
+
+
+END TypeArchitecture;
+
+--------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ROM_Temperatura IS
+  PORT (
+  	Address : IN std_logic_vector (1 downto 0);
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END ROM_Temperatura;
+
+ARCHITECTURE TypeArchitecture OF ROM_Temperatura IS
+
+type Matrix is array (0 to 3) of std_logic_vector (5 downto 0);
+signal Memory : Matrix := ("001111", "010100", "010110", "011001");
+
+BEGIN
+
+	PROCESS(Clock, Enable, Address)
+	BEGIN
+
+	if Clock = '1' and Clock'event and Enable = '1' then
+		Data &lt;= Memory(conv_integer(Address));
+	end if;
+
+	END PROCESS;
+
+
+END TypeArchitecture;
+
+-----------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+
+ENTITY ROM_Prespalare IS
+  PORT (
+  	Address : IN std_logic;
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END ROM_Prespalare;
+
+ARCHITECTURE TypeArchitecture OF ROM_Prespalare IS
+
+type Matrix is array (0 to 1) of std_logic_vector (5 downto 0);
+signal Memory : Matrix := ("000000", "001010");
+
+BEGIN
+
+	PROCESS(Clock, Enable, Address)
+	BEGIN
+
+	if Clock = '1' and Clock'event and Enable = '1' then
+		if Address = '0' then 
+			Data &lt;= Memory(0);
+		elsif Address = '1' then
+			Data &lt;= Memory(1);
+		end if;
+	end if;
+
+	END PROCESS;
+
+
+END TypeArchitecture;
+
+
+----------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+
+ENTITY ROM_Clatire_Suplimentara IS
+  PORT (
+  	Address : IN std_logic;
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END ROM_Clatire_Suplimentara;
+
+ARCHITECTURE TypeArchitecture OF ROM_Clatire_Suplimentara IS
+
+type Matrix is array (0 to 1) of std_logic_vector (5 downto 0);
+signal Memory : Matrix := ("000000", "001010");
+
+BEGIN
+
+	PROCESS(Clock, Enable, Address)
+	BEGIN
+
+	if Clock = '1' and Clock'event and Enable = '1' then
+		if Address = '0' then 
+			Data &lt;= Memory(0);
+		elsif Address = '1' then
+			Data &lt;= Memory(1);
+		end if;
+	end if;
+
+	END PROCESS;
+
+
+END TypeArchitecture;
+
+
+-------------------------------------------
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY Full_Adder IS
+  PORT (
+  	Op1 : IN std_logic_vector (5 downto 0);
+  	Op2 : IN std_logic_vector (5 downto 0);
+  	Op3 : IN std_logic_vector (5 downto 0);
+  	Op4 : IN std_logic_vector (5 downto 0);
+  	Result : OUT std_logic_vector (5 downto 0)
+    );
+END Full_Adder;
+
+
+ARCHITECTURE TypeArchitecture OF Full_Adder IS
+
+BEGIN
+
+	Result &lt;= Op1 + Op2 + Op3 +
+ Op4;
+
+END TypeArchitecture;
+
+------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ROM_Mod_Automat IS
+  PORT (
+  	Address : IN std_logic_vector (2 downto 0);
+  	Enable : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0)
+    );
+END ROM_Mod_Automat;
+
+ARCHITECTURE TypeArchitecture OF ROM_Mod_Automat IS
+
+type Matrix is array (0 to 7) of std_logic_vector (5 downto 0);
+signal Memory : Matrix := ("101000", "101101", "110010", "110010", "110100", "000000", "000000", "000000");
+
+BEGIN
+
+	PROCESS(Clock, Address, Enable)
+	BEGIN
+
+	if Clock = '1' and Clock'event and Enable = '1' then
+		Data &lt;= Memory(conv_integer(Address));
+	end if;
+
+	END PROCESS;
+
+
+END TypeArchitecture;
+
+------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY MUX_2_to_1 IS
+  PORT (
+  	I0 : IN std_logic_vector (5 downto 0);
+  	Selector : IN std_logic;
+  	I1 : IN std_logic_vector (5 downto 0);
+  	Output : OUT std_logic_vector (5 downto 0)
+    );
+END MUX_2_to_1;
+
+
+ARCHITECTURE TypeArchitecture OF MUX_2_to_1 IS
+
+BEGIN
+
+	Output &lt;= I0 when (Selector = '0') else
+			I1 when (Selector = '1');
+
+END TypeArchitecture;
+
+-------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY Counter_n_bits IS
+  PORT (
+  	Parallel_Input : IN std_logic_vector (5 downto 0);
+  	Load : IN std_logic;
+  	Enable : IN std_logic; 
+  	Reset : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0);
+  	T0 : OUT std_logic
+    );
+END Counter_n_bits;
+
+ARCHITECTURE TypeArchitecture OF Counter_n_bits IS
+
+signal Counter : std_logic_vector (5 downto 0) := "UUUUUU";
+
+BEGIN
+
+	PROCESS(Clock, Reset, Load)
+	BEGIN 
+	if Reset = '1' then 
+		Counter &lt;= "UUUUUU";
+	elsif rising_edge(Clock) and Enable = '1' then
+		if Load = '1' then
+			Counter &lt;= Parallel_Input;
+		elsif Counter /= "000000" then
+			Counter &lt;= Counter - 1;
+		end if;
+	end if;
+
+	END PROCESS;
+
+	PROCESS(Counter)
+	BEGIN
+	if Counter = "000000" then
+		T0 &lt;= '1';
+	else
+		T0 &lt;= '0';
+	end if;
+
+	END PROCESS;
+
+	Data &lt;= Counter;
+
+
+END TypeArchitecture;
+
+-------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY Counter_1_min IS
+  PORT (
+  	Enable : IN std_logic;
+  	Reset : IN std_logic;
+  	Clock : IN std_logic;
+  	Data : OUT std_logic_vector (5 downto 0);
+  	T0 : OUT std_logic
+    );
+END Counter_1_min;
+
+ARCHITECTURE TypeArchitecture OF Counter_1_min IS
+
+signal Counter : std_logic_vector (5 downto 0) := "111100";
+
+BEGIN
+
+	PROCESS(Clock, Enable, Reset)
+	BEGIN
+
+	if Reset = '1' then
+		Counter &lt;= "111100";
+	elsif rising_edge(Clock) and Enable = '1' then
+		if Counter /= "000000" then 
+			Counter &lt;= Counter - 1;
+		end if;
+	end if;
+
+	END PROCESS;
+
+	PROCESS(Counter)
+	BEGIN
+
+	if Counter = "000000" then
+		T0 &lt;= '1';
+		--Counter &lt;= "111100";
+	else 
+		T0 &lt;= '0';
+	end if;
+
+	END PROCESS;
+
+	Data &lt;= Counter;
+
+END TypeArchitecture;
+
+
+-------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY Binary_to_Digits IS
+  PORT (
+    Number : IN std_logic_vector (5 downto 0);
+    End_Program : IN std_logic;
+    Digit0, Digit1, Digit2, Digit3 : OUT std_logic_vector (3 downto 0)
+  );
+END Binary_to_Digits;
+
+ARCHITECTURE TypeArchitecture OF Binary_to_Digits IS
+BEGIN
+  PROCESS(Number, End_Program)
+    VARIABLE num_int : INTEGER := 0;
+    VARIABLE ones, tens : INTEGER := 0;
+  BEGIN
+
+  	if End_Program = '0' then 
+  	
+	     num_int := to_integer(unsigned(Number)); 
+	    
+	     ones := num_int mod 10; 
+	     tens := num_int / 10;  
+	    
+	     Digit0 &lt;= std_logic_vector(to_unsigned(ones, 4)); 
+	     Digit1 &lt;= std_logic_vector(to_unsigned(tens, 4)); 
+	     Digit2 &lt;= "1101";
+	     Digit3 &lt;= "1101";
+	     
+	elsif End_Program = '1' then
+	
+		Digit0 &lt;= "1010";
+		Digit1 &lt;= "1011";
+		Digit2 &lt;= "1100";
+		Digit3 &lt;= "1101";
+		
+	end if;
+
+    
+  END PROCESS;
+  
+END TypeArchitecture;
+
+
+-----------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all;
+
+entity Frequency_divider_1_sec is
+port (clk : in std_logic;
+       clk1 : out std_logic);
+end Frequency_divider_1_sec;
+
+architecture BEHAVIORAL of Frequency_divider_1_sec is
+	signal count : integer :=0;
+	signal b : std_logic :='0';
+	begin
+	process(clk) 
+	begin
+	if(rising_edge(clk)) then
+	count &lt;=count+1;
+	if(count = 50000000) then
+	b &lt;= not b;
+	count &lt;=0;
+	end if;
+	end if;
+	clk1&lt;=b;
+	end process;
+end BEHAVIORAL;
+
+
+----------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY SSD_Controller IS
+  PORT (
+  	Clock : IN std_logic;
+  	Enable : IN std_logic;
+  	Digit0, Digit1, Digit2, Digit3 : IN std_logic_vector (3 downto 0);
+  	Anodes : OUT std_logic_vector (3 downto 0);
+  	Chatodes : OUT std_logic_vector (6 downto 0)
+    );
+END SSD_Controller;
+
+ARCHITECTURE TypeArchitecture OF SSD_Controller IS
+
+COMPONENT Counter_16_bits is
+    port (
+        clock   : in std_logic;
+        vector_out : out std_logic_vector(15 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT BCD_to_SSD IS
+  PORT (
+  	vector_in : IN std_logic_vector (3 downto 0);
+  	vector_out : OUT std_logic_vector (6 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT Digits_MUX_4_to_1 IS
+  PORT (
+  	I0, I1, I2, I3 : IN std_logic_vector (3 downto 0);
+  	Selector : IN std_logic_vector (1 downto 0);
+  	Output : OUT std_logic_vector (3 downto 0)
+    );
+END COMPONENT;
+
+COMPONENT SSD_MUX_4_to_1 IS
+  PORT (
+  	Enable : IN std_logic;
+  	Selector : IN std_logic_vector (1 downto 0);
+  	Output : OUT std_logic_vector (3 downto 0)
+    );
+END COMPONENT;
+
+SIGNAL S0 : std_logic_vector (15 downto 0);
+SIGNAL S1 : std_logic_vector (3 downto 0);
+
+BEGIN
+
+	C0 : Counter_16_bits port map (Clock, S0);
+	C1 : Digits_MUX_4_to_1 port map (Digit0, Digit1, Digit2, Digit3, S0 (15 downto 14), S1);
+	C2 : SSD_MUX_4_to_1 port map (Enable, S0 (15 downto 14), Anodes);
+	C3 : BCD_to_SSD port map (S1, Chatodes);
+
+
+END TypeArchitecture;
+
+----------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Counter_16_bits is
+    port (
+        clock   : in std_logic;
+        vector_out : out std_logic_vector(15 downto 0)
+    );
+end entity Counter_16_bits;
+
+architecture Behavioral of Counter_16_bits is
+
+    signal count : unsigned(15 downto 0);
+
+begin
+
+    process(clock)
+    begin
+        if rising_edge(clock) then
+            if count = "1111111111111111" then
+                count &lt;= (others =&gt; '0');
+            else
+                count &lt;= count + 1; 
+            end if;
+        end if;
+    end process;
+
+    vector_out &lt;= std_logic_vector(count);
+
+end architecture Behavioral;
+
+--------------------------------------------------------------
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY BCD_to_SSD IS
+  PORT (
+  	vector_in : IN std_logic_vector (3 downto 0);
+  	vector_out : OUT std_logic_vector (6 downto 0)
+    );
+END BCD_to_SSD;
+
+ARCHITECTURE TypeArchitecture OF BCD_to_SSD IS
+
+BEGIN
+	PROCESS(vector_in)
+	BEGIN
+	
+		case vector_in is
+			  when "0000" =&gt; vector_out &lt;= "0111111"; 
+	            when "0001" =&gt; vector_out &lt;= "0000110"; 
+	            when "0010" =&gt; vector_out &lt;= "1011011"; 
+	            when "0011" =&gt; vector_out &lt;= "1001111"; 
+	            when "0100" =&gt; vector_out &lt;= "1100110"; 
+	            when "0101" =&gt; vector_out &lt;= "1101101"; 
+	            when "0110" =&gt; vector_out &lt;= "1111101"; 
+	            when "0111" =&gt; vector_out &lt;= "0000111"; 
+	            when "1000" =&gt; vector_out &lt;= "1111111"; 
+	            when "1001" =&gt; vector_out &lt;= "1101111"; 
+	            when "1010" =&gt; vector_out &lt;= "1011110";
+	            when "1011" =&gt; vector_out &lt;= "1010100";
+	            when "1100" =&gt; vector_out &lt;= "1111001";
+	            when "1101" =&gt; vector_out &lt;= "0000000"; 
+	            when others =&gt; vector_out &lt;= "0000000"; 
+	     end case;
+	     
+     END PROCESS;
+
+
+END TypeArchitecture;
+
+
+-------------------------------------------------------
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY Digits_MUX_4_to_1 IS
+  PORT (
+  	I0, I1, I2, I3 : IN std_logic_vector (3 downto 0);
+  	Selector : IN std_logic_vector (1 downto 0);
+  	Output : OUT std_logic_vector (3 downto 0)
+    );
+END Digits_MUX_4_to_1;
+
+ARCHITECTURE TypeArchitecture OF Digits_MUX_4_to_1 IS
+
+BEGIN
+
+	
+	Output &lt;= I0 when (Selector = "00") else
+			I1 when (Selector = "01") else
+			I2 when (Selector = "10") else 
+			I3 when (Selector = "11");
+
+END TypeArchitecture;
+
+
+------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY SSD_MUX_4_to_1 IS
+  PORT (
+  	Enable : IN std_logic;
+  	Selector : IN std_logic_vector (1 downto 0);
+  	Output : OUT std_logic_vector (3 downto 0)
+    );
+END SSD_MUX_4_to_1;
+
+ARCHITECTURE TypeArchitecture OF SSD_MUX_4_to_1 IS
+
+BEGIN 
+
+	PROCESS(Enable, Selector)
+	BEGIN
+
+	if Enable = '1' then 
+
+		if Selector = "00" then
+			Output &lt;= "0001";
+		elsif Selector = "01" then 
+			Output &lt;= "0010";
+		elsif Selector = "10" then
+			Output &lt;= "0100";
+		elsif Selector = "11" then
+			Output &lt;= "1000";
+		end if;
+
+	elsif Enable = '0' then
+
+		Output &lt;= "0000";
+
+	end if;
+
+	END PROCESS;
+	
+END TypeArchitecture;
+
+----------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Frequency_divider IS
+  PORT (clock : IN std_logic;
+  	   div_clk : OUT std_logic);
+END Frequency_divider;
+
+ARCHITECTURE TypeArchitecture OF Frequency_divider IS
+
+signal tmp: std_logic_vector ( 6 downto 0) := (others =&gt; '0');
+BEGIN
+
+
+process(clock)
+BEGIN
+	if(rising_edge(clock)) then
+		if tmp = ("1100011") then tmp &lt;= "0000000";
+			elsif ( tmp &lt;= "0110001") then
+				tmp &lt;= tmp + 1;
+				div_clk &lt;= '0';
+			else div_clk &lt;= '1';
+				tmp &lt;= tmp + 1;
+		end if;
+	end if;
+end process;
+
+
+END TypeArchitecture;
+
+-------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY OR_GATE IS
+  PORT (
+  	I0, I1 : IN std_logic;
+  	Output : OUT std_logic
+    );
+END OR_GATE;
+
+ARCHITECTURE TypeArchitecture OF OR_GATE IS
+
+BEGIN
+
+	Output &lt;= I0 or I1;
+
+END TypeArchitecture;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</vhdl>
+  <vhdl name="Frequency_divider">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Frequency_divider IS
+  PORT (clock : IN std_logic;
+  	   div_clk : OUT std_logic);
+END Frequency_divider;
+
+ARCHITECTURE TypeArchitecture OF Frequency_divider IS
+
+signal tmp: std_logic_vector ( 6 downto 0) := (others =&gt; '0');
+BEGIN
+
+
+process(clock)
+BEGIN
+	if(rising_edge(clock)) then
+		if tmp = ("1100011") then tmp &lt;= "0000000";
+			elsif ( tmp &lt;= "0110001") then
+				tmp &lt;= tmp + 1;
+				div_clk &lt;= '0';
+			else div_clk &lt;= '1';
+				tmp &lt;= tmp + 1;
+		end if;
+	end if;
+end process;
+
+
+END TypeArchitecture;</vhdl>
+</project>
