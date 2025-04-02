@@ -56,4 +56,4 @@ The control logic is designed for **FPGA implementation** and consists of variou
 8. **Door unlocks after completion**
 9. **Machine stops** → `Start = 0`
 
----
+---![Circuit_Diagram](https://github.com/robertmarius19/Washing-Machine-Project---VHDL/blob/main/diagram.png)
